@@ -1,0 +1,303 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+body{
+    background: #f0f3f7;
+}
+.Pulo{
+    background-color: #f0f3f7;
+    color: #f0f3f7;
+}
+
+.Acess{
+    background-color: #6a088b;
+    color: #6a088b;
+}
+
+/* Elementos footer/nav */
+
+a {
+    text-decoration: none;
+    color: #f0f3f7;
+    font-family: 'Poppins'sans-serif;;
+    font-weight:600!important;
+}
+
+li>a:hover{
+    text-decoration: underline;
+    text-decoration-color: #63e516;
+    text-decoration-thickness: 2px;
+    
+ }
+.UlBg>li {
+    background-color: transparent;
+}
+
+/* fim elementos footer */
+
+/* Elementos Modal Geral */
+
+.Img-Hoo:hover {
+    transform: scale(1.1) translateZ(0);
+    transition: 600ms;
+    cursor: pointer;
+}
+
+/* Card 1 elementos */
+.PersonaCard{
+    color: rgb(229, 233, 233);
+    background-image: url(https://i.pinimg.com/originals/7a/23/5b/7a235be3c9507f3fe74a18b82a224204.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0 0 ;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+     overflow: hidden;
+    transition: transform 500ms ease;
+}
+.PersonaCard:hover,
+.PersonaCard:focus-within{
+   transform: scale(1.05); 
+}
+.PersonaCard:hover  .CardContent > *{
+opacity: 1;
+}
+.PersonaCard:hover .CardContent{
+    transform: translateY(0);
+}
+.PersonaCard:hover .CardTitulo::after{
+    transform: scaleX(1);
+}
+/* fim elementos card 1 */
+
+/* Card 2 elementos */
+.PersonaCard2{
+    color: rgb(229, 233, 233);
+    background-image: url(https://i.pinimg.com/originals/95/f6/e8/95f6e8066ce466aa7db170fe1c2348cd.png);
+    background-size: cover;
+    padding: 10rem 0 0 ;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    overflow: hidden; 
+    transition: transform 500ms ease;
+}
+.PersonaCard2:hover,
+.PersonaCard2:focus-within{
+    transform: scale(1.05); 
+ }
+ .PersonaCard2:hover  .CardContent > *{
+opacity: 1;
+}
+.PersonaCard2:hover .CardContent{
+    transform: translateY(0);
+}
+.PersonaCard2:hover .CardTitulo::after{
+    transform: scaleX(1);
+}
+/* fim elementos card2 */
+/* elementos cards gerais */
+.CardContent{
+--padding:1.5rem;
+padding:var(--padding);
+background:linear-gradient(  hsl(0  0% 0% /0),hsl(0  0% 0% /0.1)10%, hsl(0  0% 0% /1));
+transform: translateY(75%);
+transition: transform 500ms ease;
+transition-delay: 500ms;
+}
+.CardContent > *:not(.CardTitulo){
+    opacity: 0;
+    transition: opacity 500ms linear;
+    transition-delay: 1000ms;
+}
+.CardTitulo{
+    position: relative;
+    width: max-content;
+}
+.CardTitulo::after{
+    content: "";
+    position: absolute;
+    left: calc( var(--padding)* -1);
+    bottom: 1px;
+    height: 4px;
+    width: calc(100% + var(--padding));
+    background: rgb(99, 0, 90);
+    transform: scaleX(0);
+    transition:transform 500ms ease;
+    transform-origin: left;
+}
+
+
+.CardBody{
+    color:rgba(255, 255, 255/ 0.8)
+}
+
+
+
+
+/* Fim elementos modal */
+
+/* Elementos página de Eventos*/
+
+
+.Event .accordion-body {
+    position: relative;
+    background: transparent;
+}
+
+.Event .accordion-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(1rem);
+    z-index: -1;
+}
+
+.Event-1 .accordion-button,
+.Event-1 .accordion-body::before {
+    background-image: url(../imagens/fatecon-min.webp);
+}
+
+.Event-2 .accordion-button,
+.Event-2 .accordion-body::before {
+    background-image: url(../imagens/santo-min.webp);
+}
+
+.Event-3 .accordion-button,
+.Event-3 .accordion-body::before {
+    background-image: url(../imagens/sakurabanner-min.webp);
+}
+.Event-4 .accordion-button,
+.Event-4 .accordion-body::before {
+    background-image: url(../imagens/jazz-min.webp);
+}
+.Event-5 .accordion-button,
+.Event-5 .accordion-body::before {
+    background-image: url(../imagens/oktober-min.webp);
+}
+
+.Event .accordion-button {
+    background-attachment: local;
+    background-position: center;
+    background-color: black;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.EventLink{
+    color: #6a088b;
+}
+
+
+/*Fim elementos página Eventos*/
+
+/* Fontes e títulos */
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+}
+
+h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+#pfoot {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.pfoot {
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+#pfootsmall {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family:'Poppins', sans-serif;
+}
+
+/* Fim fontes e titulos */
+
+#asideter {
+    display: flex;
+}
+
+.rede {
+    padding-right: 2em;
+}
+/* header */
+header, nav{
+    background-image: linear-gradient(#6a088b,#8a21ad)!important;
+}
+
+
+.dropdown-menu{
+    background-color:#f0f3f7;
+}
+.nav-link{
+    color: aliceblue;
+}
+.nav-link:hover{
+    color:#63e516;
+}
+
+#mensagem {
+    height: 100px;
+}
+
+iframe {
+    border-radius: 2em;
+}
+
+#bootform {
+    float: right;
+}
+
+footer {
+    clear: both;
+}
+
+label {
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.bi-list {
+    color:white;
+    font-size: 2em;
+}
+
+.navbar-toggler {
+    border: none !important;
+    color: white;
+}
+
+.btn-primary{
+    background-color: #63E516 !important;
+}
+
+.decor:hover {
+    text-decoration: underline!important;
+    text-decoration-color: #63e516!important;
+    text-decoration-thickness: 2px !important;
+    color: #8a21ad !important;
+}
+
+/* Estilização especial para termos estrangeiros */
+#gringo {
+    font-style: italic;
+}
